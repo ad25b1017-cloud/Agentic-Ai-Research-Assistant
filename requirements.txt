@@ -1,0 +1,13 @@
+streamlit
+pymupdf
+rank-bm25
+sentence-transformers
+numpy
+pandas
+tabulate
+scikit-learn
+networkx
+pyvis
+google-genai
+requests
+# optional: pip install langgraph   (for langgraph_pipeline.py)
