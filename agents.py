@@ -16,8 +16,7 @@ SYS = ("You are a careful scientific research assistant. Use ONLY the numbered e
        "If the evidence does not answer the question, say 'INSUFFICIENT EVIDENCE'. Never invent citations or numbers.")
 
 def fmt(hits, offset=1):
-    return "\n\n".join(f"[E{i}] ({h.chunk.paper}, {h.chunk.section}, p.{h.chunk.page}) {h.chunk.text}"
-                       for i, h in enumerate(hits, offset))
+    return "\n\n".join(f"[E{i}] ({h.chunk.paper}, {h.chunk.section}, p.{h.chunk.page}) {h.chunk.text}"for i, h in enumerate(hits, offset))
 
 # ---------- agentic retrieval ----------
 def standalone(question, history):
